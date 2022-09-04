@@ -5,16 +5,25 @@ permalink: /about/
 content-type: eg
 ---
 Welcome to my digital garden! 🪴
-## What is a digital garden?
+
 > "*The phrase 'digital garden' is a metaphor for thinking about writing and creating that focuses less on the resulting 'showpiece' and more on the process, care, and craft it takes to get there.*" - [Joel Hooks](https://joelhooks.com/digital-garden)
 
 **Read More**
 
-- [A Brief History & Ethos of the Digital Garden \| Maggie Appleton](https://maggieappleton.com/garden-history)
-- [What are digital gardens? \| Chuck Grimmett](https://cagrimmett.com/notes/2020/11/08/what-are-digital-gardens/)
+[[Digital Gardens]]
+
+
 
 ## Credits
-This template, [Simply Jekyll](https://github.com/raghudotcc/simply-jekyll), was made by [Raghuveer S](https://raghu.cc/).
+### Implementation:
+- [Displaying the Time Elapsed Since Publishing a Jekyll Post \| Excessively Adequate](https://excessivelyadequate.com/posts/timeago.html)
+- Template: [Simply Jekyll](https://github.com/raghudotcc/simply-jekyll), by [Raghuveer S](https://raghu.cc/).
+- Ruby gems:
+	- [jekyll-target-blank](https://rubygems.org/gems/jekyll-target-blank)[[[StackOverflow: How to open URLs in new tab in config.yml of Jekyll / Github pages site?](https://stackoverflow.com/a/65911834)::rsn]]
+	
+### Ideas:
+- Seedling 🌱/ Budding 🌿/ Evergreen 🌳 tags at the top of posts: [Maggie Appleton](https://maggieappleton.com/garden-history)
+		
 
 
 

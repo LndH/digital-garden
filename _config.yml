@@ -125,6 +125,7 @@ plugins:
   - jekyll-feed 
   - jekyll-sitemap 
   - jekyll-tidy
+  - jekyll-target-blank
 
 # Disqus Comments
 disqus:

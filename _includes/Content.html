@@ -2,9 +2,32 @@
 {%- if page.content-type == "post" -%}
 <ul class="tags">
     {%- if page.status != nil and page.status != empty -%}
-    <li><a href="javascript:void(0)" class="tag"><b>Status:</b> <i>{{page.status | capitalize}}</i></a></li>
+    <li>
+        <a href="javascript:void(0)" class="tag">
+            <b>Status:</b>
+            <i>
+                {% if page.status == "Seedling" %}
+                    Seedling 🌱
+                {% elsif page.status == "Budding" %}
+                    Budding 🌿
+                {% elsif page.status == "Evergreen" %}
+                    Evergreen 🌳
+                {% else %}
+                    {{page.status | capitalize}}
+                {% endif %}
+            </i>
+        </a>
+</li>
     {%- endif -%}
-    <li><a href="/dates/#{{ page.date | date: '%d-%B-%Y' }}" class="tag">{{ page.date | date: '%B-%d-%Y' }}</a></li>
+
+    <!-- <li><a href="/dates/#{{ page.date | date: '%d-%B-%Y' }}" class="tag">Planted {{ page.date | date: '%B-%d-%Y' }}</a></li> -->
+    <!-- [ source: https://excessivelyadequate.com/posts/timeago.html -->
+    <time id="postedon" datetime="{{ page.date | date_to_xmlschema }}" class="tag">
+        <b>Posted</b> <span id="postedago"></span>
+        <!-- on {{ page.date | date: "%B %-d, %Y" }} -->
+    </time>
+    <!-- source: https://excessivelyadequate.com/posts/timeago.html ] -->
+    
     <!-- Loop through page categories and print them in tags -->
     {%- for tag in page.tags -%}
         {%- if tag == 'Favorite' -%}
@@ -136,3 +159,42 @@
         {{content}}
     {%- endif -%}
 </div>
+
+<!-- [ source: https://excessivelyadequate.com/posts/timeago.html -->
+<script>
+    function ago(date) {
+        function render(n, unit) {
+            return n + " " + unit + ((n == 1) ? "" : "s") + " ago";
+        }
+
+        var seconds = Math.floor((new Date() - date) / 1000);
+
+        var interval = Math.floor(seconds / (60 * 60 * 24 * 365));
+        if (Math.floor(seconds / (60 * 60 * 24 * 30 * 365)) >= 1) {
+            return render(interval, "year");
+        }
+        interval = Math.floor(seconds / (60 * 60 * 24 * 30));
+        if (interval >= 1) {
+            return render(interval, "month");
+        }
+        interval = Math.floor(seconds / (60 * 60 * 24));
+        if (interval >= 1) {
+            return render(interval, "day");
+        }
+        interval = Math.floor(seconds / (60 * 60));
+        if (interval >= 1) {
+            return render(interval, "hour");
+        }
+        interval = Math.floor(seconds / 60);
+        if (interval >= 1) {
+            return render(interval, "minute");
+        }
+        interval = Math.floor(seconds);
+        return render(interval, "second");
+}
+
+var date = Date.parse(document.getElementById("postedon").getAttribute("datetime"));
+document.getElementById("postedago").innerHTML = ago(date);
+
+</script>
+<!-- source: https://excessivelyadequate.com/posts/timeago.html ] -->
