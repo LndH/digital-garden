@@ -20,6 +20,10 @@ Welcome to my digital garden! 🪴
 - Template: [Simply Jekyll](https://github.com/raghudotcc/simply-jekyll), by [Raghuveer S](https://raghu.cc/).
 - Ruby gems:
 	- [jekyll-target-blank](https://rubygems.org/gems/jekyll-target-blank)[[[StackOverflow: How to open URLs in new tab in config.yml of Jekyll / Github pages site?](https://stackoverflow.com/a/65911834)::rsn]]
+- Mastodon embedding:
+	- [Mastodon Timeline Feed \| Gitlab](https://gitlab.com/idotj/mastodon-embed-feed-timeline/)
+		- Found through [Mastodon Embeds \| Glitch.com](https://glitch.com/~mastodon-embeds)
+			- [Mastodon Timeline Feed demo](https://mastodon-embeds.glitch.me/meft.html)
 	
 ### Ideas:
 - Seedling 🌱/ Budding 🌿/ Evergreen 🌳 tags at the top of posts: [Maggie Appleton](https://maggieappleton.com/garden-history)
