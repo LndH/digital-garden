@@ -181,6 +181,8 @@
         if (interval >= 1) {
             return render(interval, "day");
         }
+        return "less than one day ago";
+        /*
         interval = Math.floor(seconds / (60 * 60));
         if (interval >= 1) {
             return render(interval, "hour");
@@ -191,6 +193,7 @@
         }
         interval = Math.floor(seconds);
         return render(interval, "second");
+        */
 }
 
 var date = Date.parse(document.getElementById("postedon").getAttribute("datetime"));
