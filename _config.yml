@@ -50,7 +50,7 @@ tagline: # subheading won't work without a tagline,
 copyright: 
   year: 2022
   msg: Lin de Huybrecht # This is a mandatory attribute for copyright to be displayed
-
+  url: https://www.lindehuybrecht.com
 user:
   display: false # setting it to false will remove the header image and bio
                 # Note that user settings come wholesale, it does not have the 
