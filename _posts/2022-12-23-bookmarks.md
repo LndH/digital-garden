@@ -3,6 +3,9 @@ title: Bookmarks
 tags: Links
 status: Seedling
 ---
+## Linux
+- [How to create a bootable Ubuntu USB drive for MacOS \| ItsFOSS](https://itsfoss.com/create-bootable-ubuntu-usb-drive-mac-os/)
+
 ## Planning
 - [Free Printable PDF Calendar \| TimeAndDate.com](https://www.timeanddate.com/calendar/create.html)
 
@@ -33,6 +36,7 @@ status: Seedling
 - [LESS Preview](http://lesscss.org/less-preview/)
 - [SlidesCarnival](https://www.slidescarnival.com/)
 - [SQL Syntax Validator](https://www.eversql.com/sql-syntax-check-validator/)
+- generating diagrams: [Mermaid](https://mermaid.js.org/intro/)
 
 ## Volunteering
 - [HOT Task Manager](https://tasks.hotosm.org/)
